@@ -22,7 +22,8 @@ body{
 
 .container{
     overflow: hidden;
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     height: 500px;
     background: #2c3a47;
     padding: 60px 70px;
@@ -118,52 +119,59 @@ h1{
     margin-left: 200px;
   }
 
-  @media  screen and (max-width: 767px) {
-        .img {
-            margin-block-end: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-left: 90px;
-        }
+@media screen and (max-width: 767px) {
 
-        .lista li a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #000000; /* Cor do texto do link */
-            font-size: 25px;
-            background:rgb(253, 121, 121);  
-            width: 500px;
-            color: white;
-            border-radius: 10px;
-            font-weight: bold;
-            margin-left: 65px;
-            
-        }
+    body {
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
 
-        body{
-            background-image: url(imagens/markus-spiske-Skf7HxARcoc-unsplash.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            width: 100vw;
-            font-family: 'Roboto', sans-serif;
-            margin-top: 70%;
-            
-        }
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
 
-        .container{
-            overflow: hidden;
-            width: 700px;
-            height: 500px;
-            background: #2c3a47;
-            padding: 60px 70px;
-            border-radius: 10px;
-            margin-top: -200px;
-        }
-  }
+    .img {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .titulos h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .titulos h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .descricao {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .links {
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    .lista li a {
+        width: 100%;
+        font-size: 18px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .lista li a img {
+        margin: 0 10px 0 0;
+    }
+}
