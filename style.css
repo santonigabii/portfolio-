@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./imagens/markus-spiske-Skf7HxARcoc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+    background: #2c3a47;
+    padding: 60px 70px;
+    border-radius: 10px;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* muda aqui */
+    gap: 20px; /* espaço entre imagem e texto */
+}
+
+img{
+    cursor: pointer;
+    border: 5px solid rgb(253, 121, 121);
+    height: 120px;
+    display: block;
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 70px;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulos h1{
+    text-align: left; /* tira o centralizado */
+    font-size: 28px;
+}
+
+.titulos h2{
+    color: rgb(253, 121, 121);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.descricao{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+    max-width: 350px;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.links{
+    padding: 60px 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.links ul{
+    list-style-type: none;
+}
+
+.lista li{
+    margin-bottom: 15px;
+}
+
+.lista li a img {
+    margin-left: 200px;
+}
+
+.lista li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000; /* Cor do texto do link */
+    font-size: 25px;
+    background:rgb(253, 121, 121);  
+    width: 500px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+
+.lista li a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    margin-left: 200px;
+  }
+
+  @media  screen and (max-width: 767px) {
+        .img {
+            margin-block-end: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 90px;
+        }
+
+        .lista li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000000; /* Cor do texto do link */
+            font-size: 25px;
+            background:rgb(253, 121, 121);  
+            width: 500px;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-left: 65px;
+            
+        }
+
+        body{
+            background-image: url(imagens/markus-spiske-Skf7HxARcoc-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 70%;
+            
+        }
+
+        .container{
+            overflow: hidden;
+            width: 700px;
+            height: 500px;
+            background: #2c3a47;
+            padding: 60px 70px;
+            border-radius: 10px;
+            margin-top: -200px;
+        }
+  }
