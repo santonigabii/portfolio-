@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: red !important;
+}
+
 body{
     background-image: url(./imagens/markus-spiske-Skf7HxARcoc-unsplash.jpg);
     background-size: cover;
@@ -21,9 +25,9 @@ body{
 
 
 .container{
-    overflow: hidden;
-    width: 700px;
-    height: 500px;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
     background: #2c3a47;
     padding: 60px 70px;
     border-radius: 10px;
@@ -43,7 +47,10 @@ img{
     display: block;
     width: 120px;
     border-radius: 50%;
-    margin-right: 70px;
+}
+
+.img img{
+    margin-right: 20px;
 }
 
 .titulos{
@@ -88,35 +95,27 @@ h1{
     list-style-type: none;
 }
 
-.lista li{
-    margin-bottom: 15px;
-}
-
-.lista li a img {
-    margin-left: 200px;
-}
 
 .lista li a {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* distribui melhor */
     text-decoration: none;
-    color: #000000; /* Cor do texto do link */
-    font-size: 25px;
-    background:rgb(253, 121, 121);  
-    width: 500px;
+    font-size: 20px;
+    background: rgb(253, 121, 121);
+    width: 100%;
+    max-width: 500px;
     color: white;
     border-radius: 10px;
     font-weight: bold;
-    
+    padding: 10px 15px;
 }
 
-
 .lista li a img {
-    width: 40px;
-    height: 40px;
-    margin-right: 4px;
-    margin-left: 200px;
-  }
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
 
  @media (max-width: 767px) {
 
@@ -126,50 +125,52 @@ h1{
     justify-content: center;
   }
 
+  @media (max-width: 767px) {
+
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
   .container {
     width: 100%;
-    height: auto;
-    padding: 30px 20px;
+    padding: 25px 15px;
   }
 
   .img {
     flex-direction: column;
     text-align: center;
-    gap: 10px;
   }
 
   .img img {
-    margin: 0;
+    margin: 0 0 10px 0;
   }
 
   .titulos h1 {
     font-size: 22px;
-    text-align: center;
   }
 
   .titulos h2 {
     font-size: 16px;
-    text-align: center;
   }
 
   .descricao {
     font-size: 14px;
-    max-width: 100%;
     text-align: center;
   }
 
   .links {
-    padding: 30px 0;
+    padding: 20px 0;
     justify-content: center;
   }
 
   .lista li a {
     width: 100%;
-    font-size: 18px;
-    justify-content: center;
+    font-size: 16px;
+    justify-content: space-between;
   }
 
-  .lista li a img {
-    margin: 0 10px 0 0;
+
   }
+
 }
